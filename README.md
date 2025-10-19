@@ -1,31 +1,30 @@
-# 🛠️ Arch-Postinstall-Tool (v3.0) - The Adaptive Customizer
+# Arch Post-install Tool (v3.0.1)
 
-An intelligent, interactive post-installation script for Arch Linux, designed to streamline the setup of a high-performance system, focusing on Wayland (Hyprland), stability, and deep shell customization.
+An intelligent, modular, and interactive TUI (Terminal User Interface) script designed to simplify the post-installation configuration of Arch Linux, with a primary focus on setting up modern Wayland environments like **Hyprland**.
 
-## Features at a Glance (v3.0)
+The tool guides the user through essential steps, including:
+* GPU driver selection (NVIDIA, AMD, Intel).
+* Installation of an AUR helper (`yay`).
+* Intelligent selection of hardware-specific patches (e.g., microcode, iGPU fixes).
+* Installation of packages, shell configuration (Zsh, Fastfetch), and dotfiles.
 
-* **Enhanced TUI:** A responsive, color-coded menu system for intuitive navigation.
-* **Adaptive Hardware Patching:** Automatic detection of CPU (Intel/AMD) and common problematic hardware (e.g., Realtek Wi-Fi) to apply crucial post-install fixes (microcode, kernel parameters, TLP).
-* **Zsh Deep Customization:** Interactive setup for **Oh My Zsh**, **Powerlevel10k**, and essential plugins.
-* **Fastfetch Styling:** Choose from several display configurations, including custom color palettes.
-* **Modular Installation:** Select GPU drivers, window managers (Hyprland, i3), and a comprehensive set of packages and dotfile themes via a guided menu flow.
-* **Wayland Focus:** Pre-selected modern packages like **PipeWire** and **XDG Portals** for a seamless Wayland experience.
+## 🚀 Key Features
 
-## Prerequisites
+* **Modular Architecture:** The script is now split into six functional components inside the `modules/` directory for dramatically improved maintainability and scalability (Version 3.0.1).
+* **Essential Patching:** Automatically applies critical kernel parameters and configuration patches based on detected hardware (CPU microcode, i915 PSR fix, etc.).
+* **User Privilege Safety:** Safely executes user-specific actions (dotfile installs, shell configuration) as the non-root user via the `execute_as_user` utility.
+* **Customization Menus:** Dedicated TUI menus for advanced configuration of popular tools like **Zsh** and **Fastfetch**.
 
-This script assumes you have already:
+## ⚙️ How to Run
 
-1.  Installed a **minimal Arch Linux base system**.
-2.  Set up **network connectivity**.
-3.  Created a **non-root user** with `sudo` privileges.
-4.  Run the script from a **TTY** or an existing terminal session.
-
-## Usage
-
-### 1. Download
-
-Clone the repository or download the script directly:
-
-```bash
-git clone [https://github.com/YourUsername/Arch-Postinstall-Tool.git](https://github.com/YourUsername/Arch-Postinstall-Tool.git)
-cd Arch-Postinstall-Tool
+1.  **Prerequisites:** Ensure your base Arch installation is complete and you have a user account set up with `sudo` privileges.
+2.  **Download/Clone:**
+    ```bash
+    git clone [https://github.com/YourUsername/Arch-Postinstall-Tool.git](https://github.com/YourUsername/Arch-Postinstall-Tool.git)
+    cd Arch-Postinstall-Tool/
+    ```
+3.  **Execute the Script:** Run the main script with `sudo`. It will safely drop privileges for user-level actions.
+    ```bash
+    sudo ./Arch-Postinstall-Tool.sh
+    ```
+4.  **Follow the TUI:** Use the interactive menu to define your system configuration, drivers, packages, and theme.
