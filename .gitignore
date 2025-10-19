@@ -1,0 +1,13 @@
+# Compilation and AUR build files
+/pkg/
+/src/
+/yay/
+
+# Logs and system artifacts
+*.log
+.DS_Store
+
+# Temporary editor/shell files
+*.swp
+*~
+.zsh_history
