@@ -19,12 +19,15 @@ The tool guides the user through essential steps, including:
 
 1.  **Prerequisites:** Ensure your base Arch installation is complete and you have a user account set up with `sudo` privileges.
 2.  **Download/Clone:**
-    ```bash
-    git clone [https://github.com/YourUsername/Arch-Postinstall-Tool.git](https://github.com/YourUsername/Arch-Postinstall-Tool.git)
-    cd Arch-Postinstall-Tool/
+
+Go to releases and download the leatest version of the .tar.gz file and ecstract the file
+
+3. now ```bash
+   cd Arch-postinstall-Tool
+   chmod +x Arch-Postinstall-Tool.sh 
     ```
-3.  **Execute the Script:** Run the main script with `sudo`. It will safely drop privileges for user-level actions.
+4.  **Execute the Script:** Run the main script with `sudo`. It will safely drop privileges for user-level actions.
     ```bash
     sudo ./Arch-Postinstall-Tool.sh
     ```
-4.  **Follow the TUI:** Use the interactive menu to define your system configuration, drivers, packages, and theme.
+5.  **Follow the TUI:** Use the interactive menu to define your system configuration, drivers, packages, and theme.
