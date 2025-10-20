@@ -31,7 +31,7 @@ Download and Extract:
 Go to the releases page and download the latest .tar.gz file (e.g., Arch-Postinstall-Tool-v3.0.1.tar.gz). Then, use the following commands to extract the archive.
 
 # Download the file (replace URL with the correct one from your releases)
-wget [https://github.com/kingvontech/Arch-Postinstall-Tool/releases/download/v3.0.1/Arch-Postinstall-Tool-v3.0.1.tar.gz](https://github.com/kingvontech/Arch-Postinstall-Tool/releases/download/v3.0.1/Arch-Postinstall-Tool-v3.0.1.tar.gz)
+wget https://github.com/kingvontech/Arch-Postinstall-Tool/releases/download/Version3.0.1/Arch-Postinstall-Tool-v3.0.1.tar.gz
 
 # Extract the archive. This creates the tool's directory.
 tar -xvzf Arch-Postinstall-Tool-v3.0.1.tar.gz
